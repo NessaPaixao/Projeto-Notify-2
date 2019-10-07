@@ -3,7 +3,6 @@
 .Banner{
     width: 100%;
     background-image: url(../imagens/banner.png);
-    width: 100%;
     height: 365px;
     background-size: cover;
     margin: 0;
@@ -27,8 +26,14 @@
                 h1 span{
                     color:#5fcd70;
                 }
+                p{
+                    color:white;
+                    margin:8px;
+
+                }
                 aside img{
                     width: 20px;
+                    
                 }
         }
         .Mao{

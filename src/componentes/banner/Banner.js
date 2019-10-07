@@ -4,27 +4,25 @@ import android from "../imagens/icone-android.png";
 import ios from "../imagens/icone-ios.png";
 import windows from "../imagens/icone-windows.png";
 import "./Banner.scss";
+import Icons from "./Icons.js";
 
 const Banner = () => {
     return(
-        <div className="Banner">
+        <header className="Banner">
             <div className="divNome">
                 <h1>Notify<span>.</span></h1>
-                <p>A great new free psd theme to showcase</p>
+                <p>A great new free psd theme to showcase </p>
                 <p>your new application.</p>
-                <aside>
-                    <a href="www.google.com"> <img src={android} alt="icon android"></img></a>
-                    <a href=""> <img src={ios} alt="icon ios"></img></a>
-                    <a href=""> <img src={windows} alt="icon windows"></img></a>
-                </aside>
+                    <div className="Icons">
+                        <Icons imagem= {android}/>
+                        <Icons imagem= {ios}/>
+                        <Icons imagem= {windows}/>
+                    </div>
             </div>
             <div className="Mao">
                 <img src={mao} alt=""></img>
             </div>
-        </div>
-            
-        
-    
+        </header>
     )
 }
 
